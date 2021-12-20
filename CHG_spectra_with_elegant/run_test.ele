@@ -1,0 +1,35 @@
+&run_setup
+ 
+       
+lattice = lattice_test.lte
+        
+use_beamline = bl,
+        
+expand_for = bunch_test.sdds,
+        
+output = %s.out,
+        
+semaphore_file = %s.done
+
+
+&end
+
+
+
+&run_control
+        
+n_steps = 1
+
+&end
+
+
+
+&sdds_beam
+        
+
+input = bunch_test.sdds
+
+
+&end
+
+&track &end
